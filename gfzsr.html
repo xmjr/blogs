@@ -6,13 +6,32 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta http-equiv="Cache-Control" content="no-siteapp">
 	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" type="images/gfzsr/x-icon" href="images/gfzsr/favicon.ico">
+	<link rel="icon" type="images/gfzsr/x-icon" href="images/gfzsr/favicon.ico">
+    <link rel="bookmark" type="images/gfzsr/x-icon" href="images/gfzsr/favicon.ico">
 	<title>广发指数日-猜涨跌，赢大礼！</title>
 	<meta name="keywords" content="广发指数日,猜涨跌,赢大礼,广发基金">
 	<meta name="description" content="广发基金邀您参与竞猜大盘每日涨跌！">
+	<link rel="stylesheet" href="css/loading.css">
 	<link rel="stylesheet" type="text/css" href="css/gfzsr.css">
-	<link rel="shortcut icon" type="images/gfzsr/x-icon" href="images/gfzsr/favicon.ico">
 </head>
 <body>
+	<!-- loading动画 -->
+	<div class="loadingbox">
+		<div class="load">
+			<ul class="loading">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 页面菜单栏 -->
 	<header class="header">
 		<div class="main">
 			<h1 class="logo"><a href="http://www.gffunds.com.cn" target="blank" title="广发基金"></a></h1>
@@ -25,8 +44,11 @@
 			</nav>
 		</div>
 	</header>
+	<!-- banner（焦点图）栏 -->
 	<div class="banner"></div>
+	<!-- 页面主要内容 -->
 	<div class="page-section">
+		<!-- 第一部分内容 -->
 		<div class="section1">
 			<h3><img src="images/gfzsr/gfpc_img_tittle1.png" alt=""></h3>
 			<div class="desc">
@@ -81,6 +103,7 @@
 				</ul>
 			</div>
 		</div>
+		<!-- 第二部分内容 -->
 		<div class="section2">
 			<div class="desc">
 				<h3 class="section-title"><img src="images/gfzsr/gfpc_img_tittle3.png" alt=""></h3>
@@ -150,6 +173,7 @@
                 </div>
 			</div>
 		</div>
+		<!-- 第三部分内容 -->
 		<div class="section3">
 			<div class="wrap">
 				<img src="images/gfzsr/gfpc_img_zhishuri_jinpai_biaozu.png" alt="">
@@ -157,6 +181,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- 页尾 -->
 	<footer class="footer">
 		<div class="wrap">
 	    <p>地址：广州市海珠区琶洲大道东1号保利国际广场南塔31-33楼&nbsp;&nbsp;&nbsp;&nbsp;邮编：510308</p>
@@ -171,5 +196,11 @@
 	</div>
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="js/gfzsr.js"></script>
+	<script>
+	$(function(){
+		// 延迟0.1秒关闭loading
+		$(".loadingbox").delay(100).hide(0);
+	});
+</script>
 </body>
 </html>

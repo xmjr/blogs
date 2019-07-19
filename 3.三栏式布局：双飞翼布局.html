@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3.三栏式布局：双飞翼布局</title>
+	<!--若将content、main合并成一个，width:auto；也可以正常布局，但这样做会先加载两侧的内容，和流体布局一样，而其float毫无作用。-->
+	<style>
+		.container {
+			margin: 20px;
+			padding: 20px;
+			overflow: hidden;
+			background: yellow;
+		}
+		.content {
+			float: left;
+			width: 100%;
+		}
+		.main {
+			height: 250px;
+			margin-left: 220px;
+			margin-right: 320px;
+			background: #999;
+		}
+		.left {
+			float: left;
+			width: 200px;
+			height: 200px;
+			/*将.left容器提到第一行的最前面*/
+			margin-left: -100%;
+			background: #eee;
+
+		}
+		.right {
+			float: right;
+			width: 300px;
+			height: 300px;
+			/*将.right容器提到第一行的末尾*/
+			margin-left: -300px;
+			background: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="content">
+			<div class="main"></div>
+		</div>
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+</body>
+</html>

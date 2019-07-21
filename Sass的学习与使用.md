@@ -17,6 +17,7 @@
 
 
 <div id="Sass的特色">
+
 ## 一、Sass的特色
 Sass是对css的扩展，在css语言基础上添加了变量、嵌套（nesting）、混合（mixin）等扩展功能，赋予了css动态语言的特性，并且完全兼容css语法，有助于更方便的维护和管理css代码，以及更高效地开发项目。
 
@@ -74,6 +75,7 @@ input.scss:output.css
 
 <div id="学习Sass">
 ## 五、学习Sass
+
 <div id="使用变量">
 ###（一）使用变量 \$
 
@@ -111,6 +113,7 @@ $highlight-border:1px solid $hightlight-color;
 在sass中，中划线命名的内容和下划线命名的内容是互通的，比如$link-color和$link_color；不过，在sass中，纯css部分不互通，比如类名、id或属性名。
 
 <div id="嵌套CSS规则">
+
 ### （二）嵌套CSS规则
 避免在css中重复写一大串选择器
 
@@ -152,6 +155,7 @@ $highlight-border:1px solid $hightlight-color;
     article a:hover { color: red }
 
 <div id="导入Sass文件">
+
 ### （三）导入Sass文件 @import
 css中的@import，允许在一个css文件中导入其他css文件；不过，只有执行到@import时，浏览器才会去下载其他css文件，这导致页面加载较慢。
 
@@ -202,10 +206,12 @@ $link-color:red !default;
     }
 
 <div id="静默注释">
+
 ### （四）静默注释 //
 不同于css标注注释格式/* ... */，sass提供一种静默注释 //，其内容不会出现在生成的css文件中，以//开头，注释内容直到行末。
 
 <div id="混合器">
+
 ### （五）混合器 @mixin @include 
 
 整个网站中基础小小的样式类似（例如一致的颜色和字体），可以使用变量来统一处理；当样式复杂，需要大段的重用样式代码时，则可通过混合器来处理。
@@ -310,6 +316,7 @@ $link-color:red !default;
     @include link-colors(red)
 
 <div id="选择器继承">
+
 ### （六）选择器继承 @extend 
 选择器继承是说一个选择器可以继承为另一个选择器定义的所有样式，通过@extend语法实现：
 
@@ -339,6 +346,7 @@ $link-color:red !default;
 如上所示，在class="seriousError"的html元素内的超链接也会变成红色和粗体。
 
 <div id="参考资料">
+
 ## 六、参考资料 
 [css预处理器sass使用教程(多图预警)](https://www.cnblogs.com/wuzhiquan/p/5912146.html)
 [Sass中文文档](https://www.sass.hk/docs/)

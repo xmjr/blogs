@@ -310,15 +310,19 @@ body {
 	z-index: 2;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.5) url("../images/html/link.png") no-repeat center / 15%;
+	padding-top: 20%;
+	color: #fff;
+	background: rgba(0,0,0,0.5) url("../images/html/link.png") no-repeat top 190px center / 15%;
 	-webkit-transition: all ease-in-out 0.4s;
 	        transition: all ease-in-out 0.4s;
 	opacity: 0;
 }
+
 .over img {
 	-webkit-transition: all ease-in-out 0.4s;
 		      transition: all ease-in-out 0.4s;
 }
+
 .text {
 	position: absolute;
 	top: 260px;
